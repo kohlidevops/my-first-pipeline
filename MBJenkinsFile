@@ -19,10 +19,10 @@ pipeline {
     }
   stage('Database-end') {
     agent {
-      docker { image 'mysql:latest' }
+      docker { image 'java:latest' }
     }
     steps {
-      sh 'mysql -version'
+      sh 'java -version'
         }
       }
   }
