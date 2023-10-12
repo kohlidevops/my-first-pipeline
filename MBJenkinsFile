@@ -19,7 +19,7 @@ pipeline {
     }
   stage('Database-end') {
     agent {
-      docker { image 'java:latest' }
+      docker { image 'openjdk:latest' }
     }
     steps {
       sh 'java -version'
